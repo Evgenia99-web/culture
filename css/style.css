@@ -135,6 +135,36 @@
     background: var(--bg-color);
     border-radius: 0px 300px;
 }
+.problem-item{
+    width: 540px;
+    background: var(--primary-color);
+    border-radius: 20px;
+    padding: 50px 30px;
+}
+.problem-name{
+    font-family: "TTFirs-ExtraBold";
+    font-size: 26px;
+    line-height: 130%;
+    letter-spacing: 0.1em;
+    color: var(--white-text);
+    margin-bottom: 30px;
+}
+.problem-descript{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--white-text);
+    margin-bottom: 24px;
+}
+.problem-btn{
+    background: var(--primary-color);
+    border: 1px solid var(--white-text);
+    border-radius: 10px;
+    padding: 21px 38px;
+}
+.problem-link{text-decoration: none; color: var(--white-text);}
 .solutions{
     display: flex;
     justify-content: space-between;
