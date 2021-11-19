@@ -7,7 +7,7 @@
 .header{padding: 40px 0; margin-bottom: 70px;}
 .header, .menu, .info-block, .intro, .tabs-caption, .modal-head, .feedback-content, .statistic{display: flex; justify-content: space-between; align-items: center;}
 .logo-solutions, .agency-mos{margin-right: 70px;}
-.menu, .section-list, .list-buttons, .tabs-caption, .steps-list, .statistic{list-style: none;}
+.menu, .section-list, .list-buttons, .tabs-caption, .steps-list, .statistic, .problem-list{list-style: none;}
 .item{margin-left: 40px;}
 .link-item{
     font-family: Roboto;
@@ -134,13 +134,21 @@
     padding-top: 92px;
     background: var(--bg-color);
     border-radius: 0px 300px;
+    padding-bottom: 95px;
 }
+.problem{display: flex;}
+.problem-list{margin-top: 75px;}
 .problem-item{
     width: 540px;
     background: var(--primary-color);
     border-radius: 20px;
     padding: 50px 30px;
+    margin: 0 12px 0 0;
+    margin-top: -40px;
 }
+.problem-item:nth-child(2n){margin-left: 92px;}
+.problem:nth-child(2n) img {margin-left: 30%;}
+.problem-item:first-child{    margin-top: 0; }
 .problem-name{
     font-family: "TTFirs-ExtraBold";
     font-size: 26px;
@@ -164,11 +172,42 @@
     border-radius: 10px;
     padding: 21px 38px;
 }
+.problem-btn:hover{
+    background: var(--white-text);
+    border: 1px solid var(--primary-color);
+}
+.problem-btn:hover .problem-link{color: var(--primary-color);}
 .problem-link{text-decoration: none; color: var(--white-text);}
 .solutions{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+.add-block-solution{text-align: center; margin-top: 100px;}
+.title-add-solution{
+    font-family: "TTFirs-Bold";
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 100px;
+}
+.add-solute{
+    background: var(--white-text);
+    border: 1px solid var(--primary-color);
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: var(--primary-color);
+    padding: 21px 58px;
+    margin-bottom: 66px;
+}
+.add-solute:hover{
+    cursor: pointer;
+    background: var(--primary-color);
+    border: 1px solid var(--white-text);
+    color: var(--white-text);
 }
 .intro{justify-content: flex-start;}
 .icon{margin-right: 50px;}
