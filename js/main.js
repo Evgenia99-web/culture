@@ -1,3 +1,9 @@
+$(document).ready(function(){
+  $('.burger').click(function(event){
+      $('.burger,.header-nav,.black,.white').toggleClass('active');
+  });
+});
+
 jQuery(document).ready(function($) {
     $('.scroll_to a').click(function() { // отслеживаем клик по кнопке с классом li-nk
       var scroll_el = $(this).attr('href'); // берем у него содержимое атрибута href, которое начинается на "#section" или ".section"
