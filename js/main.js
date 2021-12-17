@@ -17,21 +17,6 @@ jQuery(document).ready(function($) {
   });
 
 
-(function($) {
-    $(function() {
-      $("ul.tabs-caption").on("click", "li:not(.active)", function() {
-        $(this)
-          .addClass("active")
-          .siblings()
-          .removeClass("active")
-          .closest("div.tabs")
-          .find("div.tab-content")
-          .removeClass("active")
-          .eq($(this).index())
-          .addClass("active");
-      });
-    });
-  })(jQuery);
 
 
   $(document).ready(function() { 
@@ -72,19 +57,3 @@ $(function(){
     })
 })
 
-/*document.querySelectorAll('a.link-item').forEach(link =>{
-    link.addEventListener('click', function(e) {
-        e.preventDefault()
-
-        const href = this.getAttribute('href').substring(1)
-        const scrollTarget = document.getElementById(href)
-        const topOffset = 0
-        const elementPosition = scrollTarget.getBoundingClientRect().top
-        const offsetPosition = elementPosition - topOffset
-
-        window.scrollBy({
-            top: offsetPosition,
-            behavior: 'smooth',
-        })
-    })
-})*/
